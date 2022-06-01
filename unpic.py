@@ -8,5 +8,5 @@ def unpickle(path):
         with open(path, 'rb') as f:
             obj = pickle.load(f)
     else:
-        obj = f"Path  - {path} not found..."
+        obj = f"Path - {path} not found..."
     return obj
