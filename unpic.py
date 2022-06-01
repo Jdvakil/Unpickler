@@ -1,14 +1,8 @@
 import pickle 
 import os
-#Add parser later
-def unpic(path):
-    obj = None
-    with open(path, 'rb') as f:
-        obj = pickle.load(f)
-    return obj
+import argparse
 
-dirpath = os.getcwd()
-name = 'traj_rgbd_1.pkl'
-path = os.path.join(dirpath, name)
-
-print(unpic(path))
+parser = argparse.ArgumentParser()
+parser.add_argument("--file-name", help="file name to be unpickled")
+args = parser.parse_args()
+print(f"Config: {args}")
