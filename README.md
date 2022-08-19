@@ -6,4 +6,4 @@ Example on using ***unpic.py***:
 
 ***path = 'path/filename.pkl'***
 
-***print(unpic.unpickle(path))***
+***print(unpickle.unpickle(path))***
